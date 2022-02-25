@@ -1,0 +1,44 @@
+Service:
+  Name: GoSagaRecover
+  Network: tcp
+  Port: 8089
+
+Log:
+  Path: /Users/weijiexu/Log/go_saga_recover/go_saga_recover.log
+  RotationTime: 1 #多久分割一次日志，单位：hour
+  Level: info
+  WithMaxAge: 7 #保留n天内的日志，单位：day
+
+Registry:
+  Type: etcdV3 # 支持 etcd、etcdV3、zookeeper
+  Addr: 127.0.0.1:2379 #多个以空格隔开
+  BasePath: /go_saga
+  UpdateInterval: 60 #second
+  Group: dev
+
+Mysql:
+  Read: root:1@tcp(127.0.0.1:3306)/sun_shine?charset=utf8mb4&parseTime=True&loc=Local
+  Write: root:1@tcp(127.0.0.1:3306)/sun_shine?charset=utf8mb4&parseTime=True&loc=Local
+
+MysqlConf:
+  TablePrefix:
+  MaxIdleConn: 0 #0-无限制
+  MaxOpenConn: 0 #0-表示无限制
+  MaxLifetime: 0 #默认0，单位second
+  Log:
+    SlowThreshold: 200 #慢查询，单位Millisecond，使用gorm时该配置有效
+    ShowSql: true #是否打印sql到日志文件
+    IgnoreRecordNotFoundError: false #是否忽略未找到记录错误，使用gorm时该配置有效
+
+Rpc:
+  WithTimout: 2 #second
+
+RateLimit:
+  Enable: true
+  # 每FillInterval秒内生成多少个token
+  FillInterval: 1 # 单位: second
+  Token: 10000
+
+SagaService:
+  BasePath: /go_saga
+  Name: GoSaga
