@@ -16,3 +16,4 @@
 
 conf/conf.yaml
 .idea
+go.sum

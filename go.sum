@@ -659,6 +659,10 @@ github.com/xtaci/kcp-go v5.4.20+incompatible h1:TN1uey3Raw0sTz0Fg8GkfM0uH3YwzhnZ
 github.com/xtaci/kcp-go v5.4.20+incompatible/go.mod h1:bN6vIwHQbfHaHtFpEssmWsN45a+AZwO7eyRCmEIbtvE=
 github.com/xtaci/lossyconn v0.0.0-20200209145036-adba10fffc37 h1:EWU6Pktpas0n8lLQwDsRyZfmkPeRbdgPtW609es+/9E=
 github.com/xtaci/lossyconn v0.0.0-20200209145036-adba10fffc37/go.mod h1:HpMP7DB2CyokmAh4lp0EQnnWhmycP/TvwBGzvuie+H0=
+github.com/xuweijie4030/go-common v0.0.0-20220211023448-2b6ed418076b h1:iJe3oip2l5RowwfqFPKnCX6ODsAKJpje9gAkcALk45Y=
+github.com/xuweijie4030/go-common v0.0.0-20220211023448-2b6ed418076b/go.mod h1:l90izzR2JX9MN3Y4KzXCAALzxHFgEG/EAXZQqPBf+lI=
+github.com/xuweijie4030/go-common v0.0.0-20220225024822-0f8273ccb1b9 h1:hMnfyDx/c8Kwz9mTs+a+7lS7czntiZSvkSNdE3pWsvk=
+github.com/xuweijie4030/go-common v0.0.0-20220225024822-0f8273ccb1b9/go.mod h1:l90izzR2JX9MN3Y4KzXCAALzxHFgEG/EAXZQqPBf+lI=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
